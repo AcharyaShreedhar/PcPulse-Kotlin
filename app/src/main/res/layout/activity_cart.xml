@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/rlRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottomSection">
+
+        <include layout="@layout/custom_toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCart"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="20dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:scrollbars="vertical"
+            android:background="@android:color/white"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </RelativeLayout>
+
+    <!-- Total Price and Checkout Button Section -->
+    <LinearLayout
+        android:id="@+id/llBottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:layout_above="@+id/btmNav"
+        android:layout_marginBottom="2dp"
+        android:padding="16dp"
+        android:background="@drawable/splash_gradient">
+
+        <!-- Total Price -->
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_price_0_00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <!-- Checkout Button -->
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="15dp"
+            android:text="@string/proceed_to_checkout"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <!-- Include Bottom Navigation at the bottom -->
+    <include layout="@layout/activity_bottom_navigation"
+        android:id="@+id/btmNav"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

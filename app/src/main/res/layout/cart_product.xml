@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_gravity="center"
+    android:background="@color/cardBackgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Item Image -->
+        <ImageView
+            android:id="@+id/imgItem"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logo_black"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Item Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_0_00"
+                android:textSize="18sp"
+                android:textColor="@color/priceColor"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvItemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+               />
+
+        </LinearLayout>
+
+        <!-- Remove Button -->
+        <ImageView
+            android:id="@+id/ivRemove"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/remove"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/remove"
+            android:background="?attr/selectableItemBackground"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

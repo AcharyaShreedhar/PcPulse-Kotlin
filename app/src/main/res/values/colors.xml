@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryVariant">#1976D2</color> <!-- Slightly darker shade of colorPrimary for variant -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#4CAF50</color>
+    <color name="colorSecondaryVariant">#00796B</color> <!-- Teal variant as secondary color -->
+    <color name="colorOnSecondary">#000000</color>
+    <!-- Status bar color. -->
+    <color name="colorStatusBar">#0E4B87</color>
+    <color name="text_color">#333333</color>
+    <color name="colorBackground">#F4E395</color>
+
+
+    <color name="priceColor">#800020</color>
+    <color name="cardBackgroundColor">#F5F5F5</color>
+    <color name="popupBackgroundColor">#1976D2</color>
+
+</resources>

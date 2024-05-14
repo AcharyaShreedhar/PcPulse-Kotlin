@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PcPulse" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="android:popupMenuStyle">@style/PopupStyle</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.PcPulse.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="android:popupMenuStyle">@style/PopupStyle</item>
+
+    </style>
+    <style name="PopupStyle">
+        <item name="android:popupBackground">@color/popupBackgroundColor</item>
+        <item name="android:layout">@layout/custom_popup_menu_item</item>
+    </style>
+
+    <style name="Theme.PcPulse.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PcPulse.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Other style attributes -->
+    </style>
+</resources>

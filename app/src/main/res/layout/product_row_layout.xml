@@ -1,0 +1,75 @@
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:contentPaddingTop="20dp"
+    app:contentPaddingBottom="20dp"
+    app:cardPreventCornerOverlap="false"
+    android:background="@color/cardBackgroundColor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Image on the left side -->
+        <ImageView
+            android:id="@+id/imgItem"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/product_image"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgItem"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <!-- Title and Subtitle in the middle -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/priceColor"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                />
+
+        </LinearLayout>
+
+        <!-- 3-dot menu on the bottom right corner -->
+        <ImageView
+            android:id="@+id/ivThreeDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_threedotmenu"
+            android:padding="16dp"
+            android:contentDescription="@string/more_options"
+            />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

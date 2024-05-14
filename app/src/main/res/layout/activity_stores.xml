@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/btnSort"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/sort"
+            android:onClick="showDropdownMenu"
+            android:src="@drawable/ic_sort_icon"
+            android:textColor="@android:color/white"
+            android:tooltipText="Sort By" />
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_user_profile"
+            android:textColor="@android:color/white"
+            android:tooltipText="User Profile" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStoreList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include layout="@layout/activity_bottom_navigation" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698592638511",
+    "project_id": "pcpulse-2851e",
+    "storage_bucket": "pcpulse-2851e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698592638511:android:d2f2b3f62c64ca324238da",
+        "android_client_info": {
+          "package_name": "com.shree.pcpulse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmuHKny5hTyCP0LeR1Z2doRrn5CpkDkyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
